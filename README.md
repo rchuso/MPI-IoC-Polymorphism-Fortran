@@ -19,50 +19,53 @@ Running
 -------------
 
 Build the makefiles with
-  - cmake .
+
+     cmake .
 
 Then build the executable with
-  - make
+
+     make
 
 Once the executable is built, you can run it like any other MPI application:
-  - mpiexec -n \`nprocs\` bin/TestMpiIocHdf5
+
+     mpiexec -n \`nprocs\` bin/TestMpiIocHdf5
 
 If all worked correctly, you should see something like this:
 
-  - mpiexec -n \`nproc\` bin/TestMpiIoc 
-  Capabilities (to examine, process, use):
-            1 MCT:: rank=0 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            2 MCT:: rank=1 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            3 MCT:: rank=2 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            4 MCT:: rank=3 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            5 MCT:: rank=4 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            6 MCT:: rank=5 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            7 MCT:: rank=6 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            8 MCT:: rank=7 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            9 MCT:: rank=8 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            10 MCT:: rank=9 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            11 MCT:: rank=10 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            12 MCT:: rank=11 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            13 MCT:: rank=12 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            14 MCT:: rank=14 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            15 MCT:: rank=15 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-            16 MCT:: rank=13 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
-  1:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  2:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  3:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  4:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  5:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  7:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  8:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  9:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  10:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  11:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  12:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  13:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  14:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  0:16 rx:MXT:: myPi=2.718 datatype=76 from:3 tag:37
-  6:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
-  15:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     mpiexec -n \`nproc\` bin/TestMpiIoc
+     Capabilities (to examine, process, use):
+        1 MCT:: rank=0 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        2 MCT:: rank=1 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        3 MCT:: rank=2 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        4 MCT:: rank=3 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        5 MCT:: rank=4 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        6 MCT:: rank=5 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        7 MCT:: rank=6 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        8 MCT:: rank=7 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        9 MCT:: rank=8 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        10 MCT:: rank=9 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        11 MCT:: rank=10 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        12 MCT:: rank=11 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        13 MCT:: rank=12 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        14 MCT:: rank=14 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        15 MCT:: rank=15 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+        16 MCT:: rank=13 size=16 datatype=75 RAM free:111834 total:128445 cores:16 Irigal
+     1:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     2:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     3:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     4:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     5:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     7:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     8:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     9:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     10:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     11:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     12:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     13:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     14:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     0:16 rx:MXT:: myPi=2.718 datatype=76 from:3 tag:37
+     6:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
+     15:16 rx:MXT:: myPi=2.718 datatype=76 from:0 tag:37
 
 
 The Application and Structure
